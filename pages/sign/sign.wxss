@@ -1,0 +1,64 @@
+.img{
+  height: 400rpx;
+  width: 100%;
+}
+.camera{
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: 2px solid skyblue;
+}
+.view{
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  padding: 0 20rpx;
+  height: 100rpx;
+  font-size: 35rpx;
+  font-weight: 100rpx;
+  margin-top: 10rpx;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+}
+.name{
+  margin-top: 20rpx;
+  font-weight: 5rpx;
+  font-size: 30rpx;
+}
+.qiandao{
+  font-size: 30rpx;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.sign-big{
+  font-size: 30rpx;
+  padding: 0 20rpx;
+  margin-bottom: 50rpx;
+}
+.sign-statr{
+  width: 220rpx;
+  height: 220rpx;
+  background-color: #87CEE8;
+  color: #fff;
+  border-radius: 50%;
+}
+.sign-statr view{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-statr1{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.qiandaoxm{
+  margin: 20rpx 0;
+}

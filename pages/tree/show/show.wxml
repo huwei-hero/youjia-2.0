@@ -1,0 +1,29 @@
+<view class="content">
+  <block wx:for="{{loveList}}" wx:key="">
+    <view bindtap="toDetail" data-item="{{item}}">
+      <view>
+        <!--第一层放发表人的头像，昵称，或显示匿名-->
+        <view class="top">
+          <image class="touxiang" src="{{item.logo}}"></image>
+          <text>{{item.name}}</text>
+        </view>
+        <!--第二层放两到三张图片-->
+        <view class="pic">
+          <image class="picdesc" src="{{item.pic1}}"></image>
+          <image class="picdesc" src="{{item.pic2}}"></image>
+        </view>
+        <!--第三次放文字-->
+        <view class="desc">
+          <text>{{item.content}}</text>
+        </view>
+        <!--第四层放点赞和评论按钮-->
+        <view class="icon">
+          <image class="icon1" src="/images/content.jpg"></image>
+          <image class="icon2" src="/images/good.jpg" bindtap="bingo" data-id="{{item.id}}"></image>
+        </view>
+      </view>
+      <view style="margin-top:5px;height:5rpx;background:green"></view>
+    </view>
+  </block>
+  <view style="height:5rpx;background:#E0E03DA"></view>
+</view>

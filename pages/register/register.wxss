@@ -1,0 +1,55 @@
+/* pages/register/register.wxss */
+page{
+  background: #F5F7FA;
+}
+.register{
+  display: flex;
+  align-items: center;
+  margin: 20rpx;
+  background: #fff;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  
+}
+.register-from{
+  width: 100%;
+}
+.register-list{
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #F5F7FA;
+}
+.register-list:last-child{
+  border: 0;
+}
+.register-list view{
+  width: 30%;
+  color: #616B81;
+}
+.pricker{
+  font-size: 32rpx;
+}
+.register-but{
+background:#87CEE8;
+display: flex;
+width: 90%;
+height: 90rpx;
+align-items: center;
+justify-content: center;
+font-size: 36rpx;
+color: #fff;
+border-radius: 110rpx;
+position: fixed;
+bottom: 40rpx;
+margin: 0 5%;
+}
+button::after{
+  border:none;
+}
+input{
+  outline:none;
+  border:none;
+  list-style: none;
+}

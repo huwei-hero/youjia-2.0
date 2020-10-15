@@ -1,0 +1,117 @@
+page{
+  background: #F5F7FA;
+}
+.logo{
+  height: 50px;
+  width: 100%;
+  margin-top: 5px;
+}
+.logo image{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+.logo text{
+  float: right;
+  margin-right: 100px;
+  margin-top: 15px;
+}
+.name{
+  margin-top: 10px;
+  display: flex;
+  height: 120rpx;
+  border-bottom: 2rpx solid #F5F7FA;
+  align-items: center;
+  width: 100%;
+}
+.name text{
+  width: 30%;
+}
+.name:last-child{
+border: 0;
+}
+.price{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.content{
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+}
+.content textarea{
+  height: 80px;
+}
+.numChoose{
+  display: flex;
+  flex-direction: row;
+
+}
+.showImage image{
+  margin-top: 20px;
+  float: left;
+  height: 140px;
+  width: 33%;
+}
+.upload{
+  height:50px;
+  margin-top: 10px;
+}
+.submit{
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+/* 新样式 */
+.write-big{
+  background: #fff;
+  margin: 20rpx;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+.upload{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+}
+.upload text{
+  margin-right: 20rpx;
+}
+.register-but{
+  background:#87CEE8;
+  display: flex;
+  width: 90%;
+  height: 90rpx;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+  color: #fff;
+  border-radius: 110rpx;
+  position: fixed;
+  bottom: 40rpx;
+  margin: 0 5%;
+  }
+  button::after{
+    border:none;
+  }
+  input{
+    outline:none;
+    border:none;
+    list-style: none;
+  }
+  .stepper{
+    display: flex;
+    width: 100rpx;
+    align-items: center;
+    border: 2rpx solid #F5F7FA;
+    border-radius: 10rpx;
+    padding: 0 20rpx;
+    height: 60rpx;
+  }
+  .number{
+    text-align: center;
+    font-size: 24rpx;
+  }

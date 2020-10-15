@@ -1,0 +1,24 @@
+<view>
+  <view>
+    <camera device-position="front" class="camera"></camera>
+    <view class='view'>
+      <text class='name'>目前位置:{{latitude}}---{{longitude}}</text>
+    </view>
+  </view>
+  <view class="sign-big">
+    <view>
+      <view class="qiandaoxm">签到项目:{{item}}</view>
+      <view class="sign-statr1">
+      <view class="sign-statr">
+        <view style="padding-top:70rpx;margin-bottom: 10rpx;">签到完成</view>
+        <view style="font-size:24rpx">剩余时间:{{havetime}}</view>
+      </view>
+    </view>
+    </view>
+    <!-- <button wx:if="{{haveSign&&!isAchieve&&inLocation&&havetimetodo}}" bindtap="sign">识别打卡</button>
+    <text wx:if="{{haveSign=='ture'&&isAchieve=='true'}}" class="qiandao">签到完成!</text>
+    <text wx:if="{{!inLocation}}" class="qiandao">超过签到范围！</text>
+    <text wx:if="{{!haveSign}}" class="qiandao">暂无签到活动</text>
+    <text wx:if="{{!havetimetodo}}" style="margin-left:50rpx" class="qiandao">当前签到已过期</text> -->
+  </view>
+</view>

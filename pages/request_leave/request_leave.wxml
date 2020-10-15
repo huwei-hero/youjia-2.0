@@ -1,0 +1,40 @@
+<view>
+  <text >当前所剩请假次数---{{havetime}}次</text>
+  <form bindsubmit="submit">
+    <view class='moudule'>
+      <text class='name'>专业班级：{{sdept}}{{classes}}班</text>
+    </view>
+    <view class='moudule'>
+      <text class='name'>学号：{{sno}}</text>
+    </view>
+    <view class='moudule'>
+      <text class='name'>名字：{{name}}</text>
+    </view>
+    <view wx:if="{{havetime>0&&havetime<=3}}">
+      <view class='moudule'>
+        <picker name="sdate" mode="date" value="{{startdate}}" start="2019-01-01" end="2019-12-31" bindchange='setstart'>
+          <text class='name'>起始时间:{{startdate}}</text>
+        </picker>
+      </view>
+      <view class='moudule'>
+        <picker name="edate" mode="date" value="{{enddate}}" start="2019-01-01" end="2019-12-31" bindchange='setend'>
+          <text class='name'>截止时间:{{enddate}}</text>
+        </picker>
+      </view>
+      <view class='moudule'>事由：
+        <textarea  class='name' style="height:150rpx" name="seasion" placeholder="请在此填写请假原因，不超过50字"></textarea>
+      </view>
+      <view class='moudule'>
+        <text>审批导员：{{ins}}</text>
+      </view>
+      <view class='moudule'>
+        抄送老师选择：
+      </view>
+      <block wx:for="{{teachers}}"wx:for-item="item" wx:key="key">
+         <checkbox>{{item.tname}}</checkbox>
+      </block>
+      <button style="margin-top:150rpx;"form-type='submit'>提交</button>
+    </view>
+    <text wx:if="{{havetime==0}}">您的请假次数已达上限!!!本周不能再请假了哦</text>
+  </form>
+</view>

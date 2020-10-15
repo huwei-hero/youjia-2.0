@@ -1,0 +1,22 @@
+<view>
+  <block>
+    <view>
+      <!--第一行：展示卖家头像，昵称-->
+      <view class="top">
+        <image src="/images/bg.jpg"></image>
+        <text>昵称</text>
+      </view>
+      <!--第二行:自左到右分成三部分-->
+      <view>
+        <image></image>
+        <text></text>
+        <text></text>
+      </view>
+      <!--第三行：两个按钮，联系卖家和联系投诉电话-->
+      <view>
+        <button>联系卖家</button>
+        <button>投诉卖家</button>
+      </view>
+    </view>
+  </block>
+</view>

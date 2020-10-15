@@ -1,0 +1,36 @@
+<view class="write">
+  <text class="write-title">您的言论以与您的微信号绑定，请勿违规哦</text>
+  <form bindsubmit="submit">
+    <view class="write-big">
+      <view class="line line-border">
+        <text>开启匿名</text>
+        <switch style="zoom:0.5" color="#87CEE8" name="noName" style="margin-left:20rpx"></switch>
+      </view>
+      <view class="line line-border">
+        <text>姓名：</text>
+        <input name="name" placeholder="请输入您的姓名"></input>
+      </view>
+      <view class="write-text">
+        <textarea name="content" placeholder="请输入相关信息"></textarea>
+      </view>
+    </view>
+    <view class="write-big">
+      <view class="line">
+        <text class="line-upader">上传图片</text>
+        <image style="height:50px;width:50px" src="/images/upload.jfif" bindtap="chooseImage"></image>
+      </view>
+      <view class="line">
+        <text class="line-upader">选择类别</text>
+        <radio-group name="_class">
+          <radio value="1" color="#87CEE8" class="line-radio">表白</radio>
+          <radio value="2"  color="#87CEE8"  class="line-radio">吐槽</radio>
+          <radio value="3"  color="#87CEE8"  class="line-radio">招领</radio>
+        </radio-group>
+      </view>
+      <block wx:for="{{imgs}}" wx:key="">
+        <image style="float:left;height:200px;width:150px" src="{{item}}"></image>
+      </block>
+    </view>
+  </form>
+</view>
+<button class="register-but" form-type="submit">提交</button>

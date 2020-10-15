@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/register/register",
+    "pages/register/getFace/getFace",
+    "pages/my/my",
+    "pages/my/authorize/authorize",
+    "pages/my/orders/orders",
+    "pages/my/msg/msg",
+    "pages/my/ofus/ofus",
+    "pages/shop/write/write",
+    "pages/tree/write/write",
+    "pages/tree/tree",
+    "pages/tree/show/show",
+    "pages/shop/shop",
+    "pages/request_leave/request_leave",
+    "pages/find/find",
+    "pages/shop/detail/detail",
+    "pages/tree/detail/detail",
+    "pages/sign/sign",
+    "pages/my/me-info/me-info"
+  ],
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#4A6141",
+    "color": "#333",
+    "backgroundColor": "#87CEE8",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/home2.png",
+        "selectedIconPath": "/images/home1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/my2.png",
+        "selectedIconPath": "/images/my1.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87CEEB",
+    "navigationBarTitleText": "友家校园",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于签到定位"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

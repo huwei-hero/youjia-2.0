@@ -1,0 +1,43 @@
+<view>
+  <!--顶部轮播图-->
+  <view class='swiper'>
+    <swiper indicator-dots='true' autoplay='true' interval='2000'>
+      <swiper-item wx:for="{{swiper_img}}" wx:for-item="item" wx:key="key">
+        <image src="{{item.pic}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!--欢迎话语-->
+  <view style='margin-top:25rpx;'>
+    <text class='icon_text'>欢迎回来：{{username}}</text>
+  </view>
+  <!--功能选择模块-->
+  <view class='choose' wx:if="{{authorized}}">
+    <block wx:for="{{icon}}" wx:for-item="item" wx:key="key">
+      <view class="icon_css" bindtap='go' id="{{item.id}}">
+        <image src='{{item.img}}' class='icon_img'></image>
+        <text class='icon_text'>{{item.text}}</text>
+      </view>
+    </block>
+  </view>
+  <!--授权按钮-->
+  <button wx:if="{{!authorized}}" bindgetuserinfo="authorize" open-type="getUserInfo">请先授权</button>
+  <!--理工模块-->
+  <view class="hot">
+    <view style="height:20px;width:5px;background-color:skyblue"></view>
+    <text style="margin-left:10rpx;font-size:15px">理工热点</text>
+  </view>
+
+  <swiper class="footswiper" autoplay="true" interval="5000" circular="true" vertical="true">
+    <swiper-item wx:for="{{hotlist}}" wx:key="key">
+      <view class="hotbox">
+        <view>
+          <image class="hotimage" src="{{item.img}}"></image>
+        </view>
+        <view class="textbox">
+          <text class="hottext">{{item.content}}</text>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

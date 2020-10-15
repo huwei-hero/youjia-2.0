@@ -1,0 +1,33 @@
+<!--pages/secondhandstore/secondhandstore.wxml-->
+<view>
+  <!--顶部搜索框-->
+  <form bindsubmit="submit">
+    <view class='find'>
+      <input placeholder='物品名称' name="keywords"></input>
+      <button form-type="submit">搜索</button>
+    </view>
+  </form>
+  <!--商品展示列表-->
+
+  <view class='thing-box'>
+    <block wx:for="{{goodsList}}" wx:key="">
+      <view class='one' bindtap='showDetail' data-id="{{item.id}}">
+        <image class='logo' src='{{item.logo}}'></image>
+        <view class='base'>
+          <view class='userinfo'>
+            <image class='avatars' src='{{item.avatars}}'></image>
+            <text>{{item.name}}</text>
+          </view>
+          <view class='status' wx:if="{{item.status!=0}}">已处理</view>
+        </view>
+        <view class='price'>
+          ￥{{item.price}}
+        </view>
+        <view class='desc'>
+          {{item.goodsdesc}}
+        </view>
+      </view>
+    </block>
+  </view>
+  <button bindtap="toWrite">发布商品</button>
+</view>

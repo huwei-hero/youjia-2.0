@@ -1,0 +1,55 @@
+<!--pages/my/me-info/me-info.wxml-->
+<view class="">
+  <view class="me-info-bg">
+    <image src="../../../images/wolf.jpg" class="info-bg-img"></image>
+    <view class="info-xx">
+      <image class="userinfo-avatar" class="info-avater" src="{{avatar}}"></image>
+      <view class="userinfo-nickname">{{nickName}}</view>
+      <view class="register">注册账号</view>
+    </view>
+  </view>
+  <view class="me-info-view">
+    <view class="me-info-list">
+      <view class="xibie">
+        <view class="xibie-view"><image src="../../../images/xibie.png" class="me-info-icon"></image></view>
+        <view>系别</view>
+      </view>
+      <view class="xibie-one">软件工程系</view>
+    </view>
+    <view class="me-info-list">
+      <view class="xibie">
+        <view class="xibie-view"><image src="../../../images/banji.png" class="me-info-icon"></image></view>
+        <view>班级</view>
+      </view>
+      <view class="xibie-one">17-2</view>
+    </view>
+    <view class="me-info-list">
+      <view class="xibie">
+        <view class="xibie-view"><image src="../../../images/xuehao.png" class="me-info-icon"></image></view>
+        <view>学号</view>
+      </view>
+      <view class="xibie-one">11111111</view>
+    </view>
+    <view class="me-info-list">
+      <view class="xibie">
+        <view class="xibie-view"><image src="../../../images/name.png" class="me-info-icon"></image></view>
+        <view>姓名</view>
+      </view>
+      <view class="xibie-one">友家扛把子</view>
+    </view>
+    <view class="me-info-list">
+      <view class="xibie">
+        <view class="xibie-view"><image src="../../../images/phone.png" class="me-info-icon"></image></view>
+        <view>手机号</view>
+      </view>
+      <view class="xibie-one">18567654566</view>
+    </view>
+    <view class="me-info-list">
+      <view class="xibie">
+        <view class="xibie-view"><image src="../../../images/laoshi.png" class="me-info-icon"></image></view>
+        <view>导员</view>
+      </view>
+      <view class="xibie-one">辅导员</view>
+    </view>
+  </view>
+</view>

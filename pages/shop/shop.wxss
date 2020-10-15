@@ -1,0 +1,183 @@
+page {
+  background-color: #f7f7f7;
+}
+
+/*搜索框相关样式*/
+.find {
+  padding: 20rpx 2.5vw;
+  background-color: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 180rpx;
+  align-items: center;
+}
+
+.find input {
+  width: 75%;
+  border: 1rpx solid #ddd;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  padding-left: 10rpx;
+}
+
+.find button {
+  width: 20%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  background-color: #ee0000;
+  color: white;
+  padding: 0;
+}
+
+.container>view {
+  box-sizing: border-box;
+}
+
+.top {
+  width: 100vw;
+  height: 210rpx;
+  position: fixed
+}
+
+
+.mark {
+  width: 100%;
+  text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: white;
+  background-color: #ddd;
+}
+
+.thing-box {
+  margin: 20rpx auto;
+  width: 96vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.thing-box .one {
+  padding: 20rpx;
+  width: 41vw;
+  margin-bottom: 10rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1rpx solid white;
+  box-shadow: 1px 1px 10px 1px #eee;
+}
+
+.thing-box .one:hover {
+  border: 1px solid #ee0000;
+}
+
+.thing-box .one .logo {
+  width: 40vw;
+  height: 40vw;
+}
+
+.thing-box .one .price {
+  color: red;
+  text-align: left;
+  width: 100%;
+}
+
+.thing-box .one .price .area1 {
+  display: inline-block;
+  padding: 10rpx 20rpx;
+  color: white;
+  background-color: rgb(224, 29, 250);
+  border-radius: 10rpx;
+  margin-left: 25rpx;
+  font-size: 20rpx;
+}
+
+.thing-box .one .price .area2 {
+  display: inline-block;
+  padding: 10rpx 20rpx;
+  color: white;
+  margin-left: 20rpx;
+  background-color: rgb(99, 146, 248);
+  border-radius: 10rpx;
+  font-size: 20rpx;
+}
+
+.thing-box .one .call {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.thing-box .one .base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thing-box .one .base {
+  width: 100%;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 35rpx;
+}
+
+.thing-box .one .base .userinfo {
+  display: flex;
+  align-items: center;
+  color: orange;
+}
+
+.thing-box .one .base .userinfo text {
+  margin-left: 10rpx;
+}
+
+.thing-box .one .base .status {
+  color: hsl(118, 85%, 47%);
+  font-size: 25rpx;
+}
+
+.thing-box .one .base .userinfo .avatars {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 60rpx;
+}
+
+.thing-box .one .contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+  font-size: 30rpx;
+}
+
+.detail {
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background-color: rgb(243, 234, 234);
+  color: rgb(235, 48, 23);
+  width: 100%;
+  font-size: 25rpx;
+}
+
+.thing-box .one .desc {
+  margin: 10rpx 0;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  height: 60rpx;
+  line-height: 30rpx;
+  color: black;
+  font-size: 30rpx;
+}

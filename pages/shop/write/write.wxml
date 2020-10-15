@@ -1,0 +1,48 @@
+<!--头像，昵称，物品名，价格，简介，数量，图片3-->
+<view>
+  <view class="logo" wx:if="{{userInfo}}">
+    <image src="{{userInfo.avatar}}"></image>
+    <text>{{userInfo.nickName}}</text>
+  </view>
+  <form bindsubmit="submit">
+    <view class="write-big">
+      <view class="name">
+        <text>商品名称</text>
+        <input name="name" placeholder="请输入商品名称"></input>
+      </view>
+      <view class="name">
+        <text>价格</text>
+        <input name="price" placeholder="请输入价格"></input>
+      </view>
+      <view class="name">
+        <text>数量</text>
+        <view class="stepper">  
+      <!-- 减号 -->  
+      <text class="sign {{num <= 1 ? 'disabled' : 'normal'}}" bindtap="delCount" data-index="{{index}}">-</text>  
+      <!-- 数值 -->  
+      <input class="number" type="number" bindchange="bindManual" value="{{num}}"  disabled="disabled"/>  
+      <!-- 加号 -->  
+      <text class="sign {{num >= 10 ? 'disabled' : 'normal'}}" bindtap="addCount" data-index="{{index}}">+</text>  
+  </view>  
+      </view>
+    </view>
+    <view class="write-big">
+      <view class="">
+        <textarea name="content" placeholder="在此输入商品简介"></textarea>
+      </view>
+      <view class="upload">
+        <text>上传图片</text>
+        <image style="height:50px;width:50px" src="/images/upload.jfif" bindtap="chooseImage"></image>
+      </view>
+      <view class="showImage">
+        <block wx:for="{{imgs}}">
+          <image src="{{item}}"></image>
+        </block>
+      </view>
+    </view>
+    <view class="submit">
+      <button class="register-but" wx:if="{{!getName}}" open-type="getUserInfo" bindtap="getUserInfo">获取微信信息</button>
+      <button class="register-but" wx:else form-type="submit">提交</button>
+    </view>
+  </form>
+</view>

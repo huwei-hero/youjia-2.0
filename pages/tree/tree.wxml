@@ -1,0 +1,6 @@
+<view>
+  <view class="box1" bindtap="toShow" data-index="1">表白</view>
+  <view class="box2" bindtap="toShow" data-index="2">吐槽</view>
+  <view class="box3" bindtap="toShow" data-index="3">招领</view>
+  <button bindtap="toWrite" class="register-but">发布信息</button>
+</view>

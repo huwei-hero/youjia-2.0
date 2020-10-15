@@ -1,0 +1,32 @@
+<view>
+  <!--用户信息展示-->
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{avatar}}"></image>
+    <text class="userinfo-nickname">{{nickName}}</text>
+  </view>
+  <!--分割线-->
+  <view class="separate"></view>
+  <!--功能选择列表-->
+  <view class="person-list" wx:if="{{authorized}}">
+    <view class="list-item" bindtap="toMsg">
+      <image class="item-image" src="/images/msg.jpg"></image>
+      <text class="item-text">个人资料</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item" bindtap="toOrder">
+      <image class="item-image" src="/images/order.jpg"></image>
+      <text class="item-text">我的订单</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item" bindtap="toOfUs">
+      <image class="item-image" src="/images/ofus.png"></image>
+      <text class="item-text">关于我们</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="/images/shouquan.jpg"></image>
+      <button open-type="getUserInfo" class="item-text" bindtap="authorize">一键授权</button>
+    </view>
+  </view>
+  <button wx:if="{{!authorized}}" bindgetuserinfo="authorize" open-type="getUserInfo">请先授权</button>
+</view>

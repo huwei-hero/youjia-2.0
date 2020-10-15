@@ -1,0 +1,35 @@
+<view>
+  <view class="top">
+    <image src="{{data.logo}}"></image>
+    <text>{{data.name}}</text>
+  </view>
+  <view>
+    <text>{{data.content}}</text>
+  </view>
+  <view>
+    <block wx:for="{{pics}}" wx:key="key">
+      <image src="{{item}}"></image>
+    </block>
+  </view>
+  <!--以下为评论区-->
+  <view>
+    <block wx:for="{{discussion}}" wx:key="key">
+      <view class="top discussion">
+        <image src="{{item.avatars}}"></image>
+        <text>{{item.nickName}}</text>
+      </view>
+      <view>  
+        <text>{{item.content}}</text>
+      </view>
+    </block>
+  </view>
+  <!--固定评论发表区域-->
+  <form bindsubmit="submit">
+    <view class="discuss">
+      <input type="text" name="discussion" placeholder="评论注意言辞哦" value="{{discussion_info}}"/>
+      <button form-type="submit">发表</button>
+    </view>
+  </form>
+
+
+</view>

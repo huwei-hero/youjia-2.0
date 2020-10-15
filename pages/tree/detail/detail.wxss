@@ -1,0 +1,19 @@
+.top image{
+  height:50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.discussion{
+  margin-top: 10px;
+}
+.discussion image{
+  height: 30px;
+  width: 30px;
+}
+.discuss{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+}

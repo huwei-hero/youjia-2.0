@@ -1,0 +1,29 @@
+<view class="register">
+  <form bindsubmit='formSubmit' class="register-from">
+    <view class="register-list">
+      <view>系别选择</view>
+      <picker name="sdept" class="pricker" bindchange='choose_sdept' value='{{index1}}' range='{{sdepts}}'>{{sdepts[index1]||'请选择系列'}}
+      </picker>
+    </view>
+    <view  class="register-list">
+      <view>班级选择</view>
+      <picker name="classes" class="pricker" bindchange='choose_clas' value='{{index2}}' range='{{classes}}'>{{classes[index2]||'请选择班级'}}
+      </picker>
+    </view>
+    <view  class="register-list">
+      <view>学号</view><input name="sno" placeholder='请填写您的学号'></input>
+    </view>
+    <view  class="register-list">
+      <view>姓名</view><input name="name" placeholder='请填写您的姓名'></input>
+    </view>
+    <view  class="register-list">
+      <view>手机号</view><input name="tel" type="number" maxlength="11" placeholder='请填写您的手机号'></input>
+    </view>
+    <view  class="register-list">
+      <view>导员绑定</view>
+    <picker name="ins"  class="pricker" bindchange='choose_ins' value='{{index3}}' range='{{instructor}}'>{{instructor[index3]||'请选择导员'}}
+    </picker>
+  </view>
+  </form>
+</view>
+<button form-type='submit' class="register-but">确认绑定</button>

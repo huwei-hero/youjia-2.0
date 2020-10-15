@@ -1,0 +1,69 @@
+.box1,.box2,.box3{
+  margin-top: 50px;
+  height: 50rpx;
+  width: 100rpx;
+  background: rgb(0,0,0,0.3);
+  color:#fff;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rpx;
+}
+.box1{
+  margin-top: 30%;
+  animation: move1 10s linear infinite;
+}
+.box2{
+  animation: move2 5s linear infinite;
+}
+.box3{
+  animation: move3 5s linear infinite;
+}
+@keyframes move1{
+  0%{margin-left: 0%;top: 0}
+  12%{margin-left: 25%;top: 0}
+  24%{margin-left: 50%;top: 0}
+  35%{margin-left: 75%;top: 0}
+  50%{margin-left: 90%;top: 0}
+  70%{margin-left: 75%;top: 0}
+  80%{margin-left: 50%;top: 0}
+  90%{margin-left: 25%;top: 0}
+  100%{margin-left: 0%;top: 0}
+}
+@keyframes move2{
+  0%{margin-left: 100%;top: 0}
+  25%{margin-left: 75%;top: 0}
+  50%{margin-left: 50%;top: 0}
+  75%{margin-left: 25%;top: 0}
+  100%{margin-left: 0%;top: 0}
+}
+@keyframes move3{
+  0%{margin-left: 0%;top: 0}
+  25%{margin-left: 55%;top: 0}
+  50%{margin-left: 35%;top: 0}
+  75%{margin-left: 75%;top: 0}
+  100%{margin-left: 100%;top: 0}
+}
+.register-but{
+  background:#87CEE8;
+  display: flex;
+  width: 90%;
+  height: 90rpx;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+  color: #fff;
+  border-radius: 110rpx;
+  position: fixed;
+  bottom: 40rpx;
+  margin: 0 5%;
+  }
+  button::after{
+    border:none;
+  }
+  input{
+    outline:none;
+    border:none;
+    list-style: none;
+  }

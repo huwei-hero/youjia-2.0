@@ -1,0 +1,12 @@
+page{
+  width: 90%;
+  margin: 0 auto;
+  height:100%;
+}
+.posi {
+  margin:0 auto;
+  width: 90%;
+  position: absolute;
+  top:30%;
+}
+

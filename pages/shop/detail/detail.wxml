@@ -1,0 +1,22 @@
+<view>
+  <image class='show' mode='widthFix' src='{{detail.logo}}'></image>
+   <image  class='show' mode='widthFix' src='{{detail.picdesc1}}'></image>
+   <image class='show'  mode='widthFix' src='{{detail.picdesc2}}'></image>
+   <view style='color:white;height:20vh'>...</view>
+</view>
+<view class='bottom'>
+  <view class='desc'>
+     {{detail.goodsdesc}}
+  </view>
+  <view class='base'>
+     <view class='user'>
+        <image src='{{detail.avatars}}'></image>
+        {{detail.name}}
+     </view>
+     <view class='op'>
+        <text style="color:red;margin-right:20px;margin-top:10px">{{detail.price}}元</text>
+        <view class='l' bindtap='buy'>购买</view>
+        <view class='r' bindtap='call' data-num="{{detail.contact}}">联系Ta</view>
+     </view>
+  </view>
+</view>

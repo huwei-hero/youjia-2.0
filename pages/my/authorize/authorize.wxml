@@ -1,0 +1,8 @@
+<view>
+  <view class="posi">
+    <view style="margin-bottom:10px"><text>为了程序正常使用，请开启所有授权</text></view>
+    位置授权：<switch style="float:right" bindchange="position"></switch>
+  
+    <button style="margin-top:50px" open-type="getUserInfo" bindtap="getUserInfo">获取微信信息</button>
+  </view>
+</view>

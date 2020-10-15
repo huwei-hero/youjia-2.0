@@ -1,0 +1,78 @@
+/* pages/my/me-info/me-info.wxss */
+.me-info-bg {
+  position: relative;
+  width: 100%;
+  height:414rpx;
+}
+
+.info-bg-img {
+  position: fixed;
+  width: 100%;
+}
+
+.info-xx {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:9% 10%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-bottom: 1px solid red;
+  padding-bottom: 3%;
+}
+
+.info-avater {
+  width: 200rpx;
+  height: 200rpx;
+}
+.userinfo-nickname{
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 36rpx;
+    margin-top: 20rpx;
+}
+.register{
+  color: red;
+  font-size: 36rpx;
+  margin-top: 20rpx;
+}
+.me-info-icon{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+}
+.me-info-list{
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  justify-content: space-between;
+  margin-bottom: 50rpx;
+}
+.xibie-view{
+  background: #87CEE8;
+  margin-right: 30rpx;
+  border-radius: 50%;
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.me-info-view{
+  width: 80%;
+  margin: 10% 5% 10% 15%;
+}
+.xibie{
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.xibie-one{
+  width: 50%;
+  text-align: left;
+}

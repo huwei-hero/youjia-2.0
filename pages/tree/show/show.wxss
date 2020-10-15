@@ -1,0 +1,34 @@
+.content{
+  border: 1px solid red;
+  width: 95%;
+  margin-left: 2.5%;
+}
+.top{
+  height: 42px;
+}
+.pic{
+  height: 150px;
+}
+.desc{
+  /*想办法做个文字效果，固定显示多少行，多余的。。。表示*/
+}
+.icon{
+  height: 30px;
+}
+.touxiang{
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+.picdesc{
+  width: 50%;
+  height: 150px;
+  float: left;
+}
+
+.icon1,.icon2{
+  height: 30px;
+  width: 30px;
+  float: right;
+  margin-right: 6px;
+}

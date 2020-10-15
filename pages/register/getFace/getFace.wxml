@@ -1,0 +1,9 @@
+<view>
+  <view>请在光线充足的地方录入您的人脸信息</view>
+  <view>
+    <camera device-position="front" style="width: 100%; height: 220px; "></camera>>
+  </view>
+  <view>
+    <button bindtap='getFace'>确认录入</button>
+  </view>
+</view>
